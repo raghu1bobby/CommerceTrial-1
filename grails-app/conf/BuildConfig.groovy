@@ -47,12 +47,12 @@ grails.project.dependency.resolution = {
     }
 
     dependencies {
+		 compile 'org.grails:grails-datastore-gorm:3.0.4.RELEASE'
+  compile 'org.grails:grails-datastore-core:3.0.4.RELEASE'
+  test 'org.grails:grails-datastore-simple:3.0.4.RELEASE'
         // specify dependencies here under either 'build', 'compile', 'runtime', 'test' or 'provided' scopes e.g.
         // runtime 'mysql:mysql-connector-java:5.1.27'
         // runtime 'org.postgresql:postgresql:9.3-1100-jdbc41'
-		compile 'org.grails:grails-datastore-gorm:3.0.4.RELEASE'
-		compile 'org.grails:grails-datastore-core:3.0.4.RELEASE'
-		test 'org.grails:grails-datastore-simple:3.0.4.RELEASE'
     }
 
     plugins {
@@ -61,14 +61,15 @@ grails.project.dependency.resolution = {
 
         // plugins for the compile step
         compile ":scaffolding:2.0.2"
-        compile ':cache:1.1.1'
-		compile ":mysql-connectorj:5.1.22.1"
-		compile ':mongodb:2.0.1'
+     //   compile ':cache:1.1.1'
+	     compile ":mongodb:3.0.0"
+		 compile ":mongodb-session:0.1"
         // plugins needed at runtime but not for compilation
-       // runtime ":hibernate:3.6.10.9" // or ":hibernate4:4.3.4"
+     //  runtime ":hibernate:3.6.10.9" // or ":hibernate4:4.3.4"
         runtime ":database-migration:1.3.8"
         runtime ":jquery:1.11.0.2"
         runtime ":resources:1.2.7"
+		
         // Uncomment these (or add new ones) to enable additional resources capabilities
         //runtime ":zipped-resources:1.0.1"
         //runtime ":cached-resources:1.1"

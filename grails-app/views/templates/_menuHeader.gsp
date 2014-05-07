@@ -6,13 +6,12 @@
                 </div>
                 <div class="menu">
                 <ul class="megamenu skyblue">
-            <li class="active grid"><g:link view = "/" >Home</g:link></li>
-            <li><a class="color4" href="#">Cell Phone</a>
-                </li>               
-                <li><a class="color5" href="#">Motors</a>
-                </li>
-                <li><g:link controller="Shoes" action="showAllShoes">Shoes</g:link></li>
-                <li><g:link controller="Laptop" action="showAll">Laptops</g:link></li>
+                
+            <li class="active grid">
+            <g:link view = "/" >Home</g:link></li>
+            <g:each var = "category" in ="${commercetrial.Category.list()}">
+            <li><g:link controller = "Products" action = "showAll" params = '[categoryName: "${category.categoryName }", category_id: "${category._id}"]'>${category.categoryName} </g:link> </li></g:each>
+      
             </ul>
             </div>
         </div>

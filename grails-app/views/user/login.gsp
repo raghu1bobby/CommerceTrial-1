@@ -27,7 +27,7 @@
                                   <label for="modlgn_remember"><a href="#">Forget Your Password ? </a></label>
                                </p>
                                
-                               <g:actionSubmit value="submit"/><div class="clear"></div>
+                               <g:actionSubmit value = "Submit"/><div class="clear"></div>
                              </div>
                           </fieldset>
                          </g:form>

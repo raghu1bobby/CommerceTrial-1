@@ -10,8 +10,10 @@ def index = {
 	}
 
 
-	def submit () {
-		def previousUri = params.previousUri ?: "/"
+
+	def submit={
+println params.username
+			def previousUri = params.previousUri ?: "/"
 		def u = User.findByUsername(params.username)
 		
 		if(u) {
@@ -19,10 +21,15 @@ def index = {
 				session.user = u
 				redirect (uri: previousUri)
 			}
-		}
-		
+		}		
 		else
+		{	
 			session.invalidate()
+			
+			println "not working"
+		
+			}
+			
 	}
 
 	def logout() {
@@ -36,8 +43,9 @@ def index = {
 		def previousUri = params.previousUri ?: "/"
 		if(request.method == "POST")
 		{
-		def u = new User(username:params.username,email:params.email,password:params.password,confirm:params.confirm)
-		//u.save(flush:true)
+		def u = new User(username:params.username,password:params.password, confirm_password:params.confirm, email:params.email)
+	 //u.save(flush:true)
+		
 		if(!u.save(flush:true)){
 			return [user:u]
 		} else {
