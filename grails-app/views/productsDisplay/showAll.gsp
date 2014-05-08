@@ -36,9 +36,9 @@
                 </div>
  </g:each>
   
-    
+    <div class="clear"></div>
   
 </body>
 
-
+<div class="clear"></div>
 </html>
