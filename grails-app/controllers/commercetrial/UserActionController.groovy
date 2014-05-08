@@ -2,7 +2,13 @@ package commercetrial
 
 class UserActionController {
 
+	def goto_indexPage(){
+		render (view :'/index')
+		
+	}
+	
 def index = {
+	println "in index"
 	redirect (uri: '/')
 	}
 

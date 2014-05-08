@@ -10,6 +10,10 @@ class AddressController {
 
     static allowedMethods = [save: "POST", update: "PUT", delete: "DELETE"]
 
+def goto_index(){
+	render(view:"/index")
+	}
+		
     def index(Integer max) {
         params.max = Math.min(max ?: 10, 100)
         respond Address.list(params), model:[addressInstanceCount: Address.count()]

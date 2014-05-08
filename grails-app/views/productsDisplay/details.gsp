@@ -22,7 +22,7 @@ border:1px solid black;
    <g:img dir="images" file="${item.image}" width="200" height="200"/>
    <h1> ${item.productName }</h1>
     <h2>${item.title}</h2>
-    <h3>${item.price }</h3>
+    <h3>Price: ${item.price }$</h3>
     <p>${item.description }</p>
     
     <g:each in = "${item.extra}" var = "ex">
