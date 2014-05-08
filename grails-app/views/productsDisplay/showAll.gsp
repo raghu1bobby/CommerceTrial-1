@@ -1,12 +1,7 @@
 <html>
 <head>
-<title>Laptop Junction</title>
-<meta name ="layout" content = "main"/>
-
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<link rel = "stylesheet" type="text/css" href="${createLinkTo(dir:'css',file:'laptopShowAll.css')}" />
-<link rel = "stylesheet" type="text/css" href="${createLinkTo(dir:'css',file:'styleDelete.css')}" />
-
+<title>HoochiPoochi</title>
+<meta name ="layout" content = "client_main"/>
 
 </head>
 
@@ -44,4 +39,6 @@
     
   
 </body>
+
+
 </html>

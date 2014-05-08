@@ -2,7 +2,7 @@
 
 <head>
 
-<meta name = "layout" content = "main">
+<meta name = "layout" content = "client_main">
 
 </head>
 <body>

@@ -43,7 +43,8 @@ $(document).ready(function(){$(".megamenu").megamenu();});
 <g:render template = "templates/headerTop" contextPath = "/"></g:render>
 <g:render template = "templates/menuHeader" contextPath = "/"></g:render>
 <g:layoutBody/>
-<g:render template="templates/footer" contextPath = "/"></g:render>
+
+
 
 </body>
 
