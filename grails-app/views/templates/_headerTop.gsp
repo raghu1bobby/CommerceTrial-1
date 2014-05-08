@@ -10,12 +10,12 @@
                     <li class="active"><a href="#">My Account</a></li> 
                     
                     <g:if test="${session?.user}">
-                    Hi, ${session?.user.username}
-                    <li><g:link controller="user" action="logout">logout</g:link></li>
+                   Hi, ${session?.user}
+                    <li><g:link controller="userAction" action="logout">logout</g:link></li>
                     </g:if>
                     <g:else>
-                     <g:link controller="user" action="login" params = "[previousUri: (request.forwardURI - request.contextPath) ]">Login</g:link>
-                     <g:link controller="user" action="register">Sign up now!</g:link>
+                     <g:link controller="userAction" action="login" params = "[previousUri: (request.forwardURI - request.contextPath) ]">Login</g:link>
+                     <g:link controller="userAction" action="register">Sign up now!</g:link>
                     </g:else>
                 </ul>
             </div>

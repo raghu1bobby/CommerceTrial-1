@@ -2,15 +2,15 @@
         <div class="wrap">
             <div class="header-bottom-left">
                 <div class="logo">
-                    <g:link controller="user" action="index"><g:img dir="images" file="logo.jpg" width="250px" /></g:link>
+                    <g:link controller="userAction" action="index"><g:img dir="images" file="logo.jpg" width="250px" /></g:link>
                 </div>
                 <div class="menu">
                 <ul class="megamenu skyblue">
                 
             <li class="active grid">
-            <g:link view = "/" >Home</g:link></li>
+            <g:link view = "/">Home</g:link></li>
             <g:each var = "category" in ="${commercetrial.Category.list()}">
-            <li><g:link controller = "Products" action = "showAll" params = '[categoryName: "${category.categoryName }", category_id: "${category._id}"]'>${category.categoryName} </g:link> </li></g:each>
+            <li><g:link controller = "ProductsDisplay" action = "showAll" params = '[categoryName: "${category.categoryName }", category_id: "${category.id}"]'>${category.categoryName} </g:link> </li></g:each>
       
             </ul>
             </div>
@@ -30,8 +30,8 @@
             </li>
         </ul>
         <ul class="last"><li>
-      <g:if test="${session?.user}">
-                    <g:link controller="user" action="MyCart">Cart(${session?.user.counter}))</g:link>
+      <g:if test="${session?.User}">
+                    <g:link controller="userAction" action="MyCart">Cart(${session?.User.counter}))</g:link>
                     </g:if>
                     <g:else>
                     <a href="">Cart(0)</a>
