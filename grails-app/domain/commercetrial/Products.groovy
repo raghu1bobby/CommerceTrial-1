@@ -6,7 +6,7 @@ String productName
 String image
 String title
 String description
-Integer price
+Double price
 
 static hasMany= [extra:Extras]
 static embedded = ["extra"]

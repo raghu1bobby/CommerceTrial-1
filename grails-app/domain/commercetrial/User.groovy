@@ -8,7 +8,7 @@ class User {
 	String confirm_password
 	String email
 	String mobile
-	Integer counter
+	Integer counter =0
 //	static hasMany = [address:Address]
 	//static embedded = ['address']
 	//static transients = ['confirm_password']

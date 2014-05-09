@@ -30,8 +30,8 @@
             </li>
         </ul>
         <ul class="last"><li>
-      <g:if test="${session?.User}">
-                    <g:link controller="userAction" action="MyCart">Cart(${session?.User.counter}))</g:link>
+      <g:if test="${session?.user}">
+                    <g:link controller="userAction" action="MyCart">Cart(${session?.user.counter})</g:link>
                     </g:if>
                     <g:else>
                     <a href="">Cart(0)</a>

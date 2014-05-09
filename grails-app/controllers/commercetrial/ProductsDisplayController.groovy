@@ -32,7 +32,7 @@ def showAll() {
 //	println Products.findAllByCategories(Category.findByCategoryName("${params.categoryName}"))
 	
 //	println Products.findAllByCategory()
-[products: Products.findAllByCategories(Category.findByCategoryName("${params.categoryName}"))]
+[products: Products.findAllByCategories(Category.findByCategoryName("${params.categoryName}")), category: params.categoryName]
 	
 	
 	}

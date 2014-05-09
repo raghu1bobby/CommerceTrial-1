@@ -16,17 +16,19 @@
                <g:link action="details" id="${item.id}" >
                 <div class="inner_content clearfix">
                     <div class="product_image">
-                        <g:img dir="images" file="${item.image}" width="270" height="200"/>
+                    <g:hiddenField name="${item.productName }"/>
+                    <g:hiddenField name="${item.price }"/>
+                        <g:img dir="images" file="${item.image}" name = "image" width="270" height="200"/>
                     </div>
                       
-                    <div class="price">
+                                          <div class="price">
                        <div class="cart-left">
                             <g:link class="title" controller="laptop" action="details" id="${item.id}" >${item.title}</g:link>
                             <div class="price1">
                               <span class="actual" >$ ${item.price}</span>
                             </div>
                         </div>
-                                                <g:link controller="userAction" format="${item.price}" action="addToCart" id="${item.id}" params="${[currentController: params.controller, currentAction: params.action]}" ><div class="cart-right"> </div></g:link>
+                                                <g:link controller="userAction" format="${item.price}" action="addToCart" id="${item.id}" params="[categoryName: params.categoryName]" ><div class="cart-right"> </div></g:link>
                         <div class="clear"></div>
                         
                      </div>             
