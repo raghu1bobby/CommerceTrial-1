@@ -109,4 +109,11 @@ println params.username
 	}
 	
 	
+	def addToCart(){
+		println "in addtocart"
+		
+		
+		}
+	
+	
 	}

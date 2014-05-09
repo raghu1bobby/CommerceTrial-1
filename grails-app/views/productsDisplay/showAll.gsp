@@ -26,7 +26,7 @@
                               <span class="actual" >$ ${item.price}</span>
                             </div>
                         </div>
-                                                <g:link controller="userAction" format="${item.price}" action="addToCart" id="${item.id}" ><div class="cart-right"> </div></g:link>
+                                                <g:link controller="userAction" format="${item.price}" action="addToCart" id="${item.id}" params="${[currentController: params.controller, currentAction: params.action]}" ><div class="cart-right"> </div></g:link>
                         <div class="clear"></div>
                         
                      </div>             

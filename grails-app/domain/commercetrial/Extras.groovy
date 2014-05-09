@@ -6,7 +6,6 @@ static mapWith = "mongo"
 String name
 String value
 
-static belongsTo= [products:Products]
     static constraints = {
     }
 	static mapping = {
