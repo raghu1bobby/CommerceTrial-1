@@ -1,15 +1,12 @@
 package commercetrial
 
 class Products {
-	static mapWith = "mongo"
 
 String productName
-String image
+def image
 String title
 String description
 Integer price
-static hasMany = [extra:Extras]
-static embedded = ['extra']
 
 
 static belongsTo =[categories:Category]

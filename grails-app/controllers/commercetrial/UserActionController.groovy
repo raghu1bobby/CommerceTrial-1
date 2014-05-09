@@ -12,35 +12,11 @@ def index = {
 	redirect (uri: '/')
 	}
 
-	def login = {
-		println params.username
-		
-		
-		
-		
-		if((params.username == "retail" && params.password =="retail") || (params.username=='admin' && params.password =='admin'))
-		{
-			session.user = params.username
-			render(view:"/index")
-		}else {
-		
-		
-		def u = User.findByUsername(params.username)
-		if (u) {
-			// username and password match -> log in
-			session.user = u
-			redirect(uri:'/')
-			//redirect(controller:'main')
-		} else {
-			render (view : "login")
-			//redirect(controller:'user')
-		}
-		
-	}}
+	
 
 
 
-	def submit={
+	def login={
 println params.username
 			def previousUri = params.previousUri ?: "/"
 		def u = User.findByUsername(params.username)
@@ -48,8 +24,16 @@ println params.username
 		if(u) {
 			if(u.password == params.password) {
 				session.user = u
+				if(session.user.username == "retail")
+				{
+					render (view :'/index')
+					
+				}else{
+				
 				redirect (uri: previousUri)
-			}
+				}
+				
+				}
 		}		
 		else
 		{	

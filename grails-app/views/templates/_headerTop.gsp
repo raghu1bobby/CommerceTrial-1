@@ -10,7 +10,7 @@
                     <li class="active"><a href="#">My Account</a></li> 
                     
                     <g:if test="${session?.user}">
-                   Hi, ${session?.user}
+                   Hi, ${session?.user.username}
                     <li><g:link controller="userAction" action="logout">logout</g:link></li>
                     </g:if>
                     <g:else>

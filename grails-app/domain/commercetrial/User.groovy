@@ -11,7 +11,7 @@ class User {
 	Integer counter
 //	static hasMany = [address:Address]
 	//static embedded = ['address']
-	static transients = ['confirm_password']
+	//static transients = ['confirm_password']
 	static constraints = {
 		username nullable:false, blank:false, size:5..15, unique:true;
 		email email:true;

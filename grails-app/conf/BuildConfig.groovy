@@ -47,6 +47,7 @@ grails.project.dependency.resolution = {
     }
 
     dependencies {
+		runtime 'mysql:mysql-connector-java:5.1.27'
 		 compile 'org.grails:grails-datastore-gorm:3.0.4.RELEASE'
   compile 'org.grails:grails-datastore-core:3.0.4.RELEASE'
   test 'org.grails:grails-datastore-simple:3.0.4.RELEASE'

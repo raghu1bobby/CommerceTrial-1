@@ -25,7 +25,7 @@
 				</g:eachError>
 			</ul>
 			</g:hasErrors>
-			<g:uploadForm url="[resource:productsInstance, action:'save']"  >
+			<g:uploadForm url="[resource:productsInstance, action:'save']" method = 'post'  >
 				<fieldset class="form">
 				<input type="file" name="myFile" />
 					<g:render template="form"/>
