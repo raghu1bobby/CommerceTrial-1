@@ -22,7 +22,7 @@ class AuthenticatonFilters {
 				if((session.user=='retail') && (controllerName == 'user' || controllerName == 'address' || controllerName == 'productsDisplay' || controllerName =='cart'))
 			
 				{
-					render "error 403 You are Forbidden to Enter"
+					render "You are Forbidden to Enter, Please contact Professor for more details"
 					return false
 				}
 			}

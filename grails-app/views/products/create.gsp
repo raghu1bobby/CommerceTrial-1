@@ -25,14 +25,15 @@
 				</g:eachError>
 			</ul>
 			</g:hasErrors>
-			<g:form url="[resource:productsInstance, action:'save']" >
+			<g:uploadForm url="[resource:productsInstance, action:'save']"  >
 				<fieldset class="form">
+				<input type="file" name="myFile" />
 					<g:render template="form"/>
 				</fieldset>
 				<fieldset class="buttons">
 					<g:submitButton name="create" class="save" value="${message(code: 'default.button.create.label', default: 'Create')}" />
 				</fieldset>
-			</g:form>
+			</g:uploadForm>
 		</div>
 	</body>
 </html>
