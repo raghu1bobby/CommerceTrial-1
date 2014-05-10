@@ -11,17 +11,17 @@
         <div class="slider_container">
             <div class="slide"> 
                 <!-- Slide image -->
-                    <img src="images/banner.jpg" alt=""/>
+                    <img src="images/motor1.jpg" alt=""/>
                 <!-- /Slide image -->
                 <!-- Texts container -->
                 <div class="slide_content">
                     <div class="slide_content_wrap">
                         <!-- Text title -->
-                        <h4 class="title">Laptop Junction</h4>
+                        <h4 class="title">Motor Store</h4>
                         <!-- /Text title -->
                         
                         <!-- Text description -->
-                        <p class="description">A perfect place to buy Laptops</p>
+                        <p class="description">One Place Shop To buy Exclusive Cars</p>
                         <!-- /Text description -->
                     </div>
                 </div>
@@ -31,27 +31,27 @@
             <!--/slide -->
             
                 <div class="slide">
-                <img src="images/banner1.jpg" alt=""/>
+                <img src="images/mobilelogo.png" alt=""/>
                 <div class="slide_content">
                     <div class="slide_content_wrap">
-                        <h4 class="title">Camera Point</h4>
-                        <p class="description">Get your moments Captured</p>
+                        <h4 class="title">Cellphones Network</h4>
+                        <p class="description">Get in touch with your Friends and Family</p>
                     </div>
                 </div>
             </div>
             
             <div class="slide">
-                <img src="images/banner.jpg" alt=""/>
+                <img src="images/laptopjunction.png" alt=""/>
                 <div class="slide_content">
                     <div class="slide_content_wrap">
-                        <h4 class="title">Watch Store</h4>
-                        <p class="description">Be punctual of what you do !</p>
+                        <h4 class="title">Laptop JuncTion</h4>
+                        <p class="description">Perfect Place to Buy Laptops</p>
                     </div>
                 </div>
             </div>
             
             <div class="slide">
-                <img src="images/banner.jpg" alt=""/>
+                <img src="images/shoeslogo.jpg" alt=""/>
                 <div class="slide_content">
                     <div class="slide_content_wrap">
                         <h4 class="title">Shoe Way </h4>

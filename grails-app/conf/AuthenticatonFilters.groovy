@@ -19,7 +19,7 @@ class AuthenticatonFilters {
 		retail(action: '*', controller:'*')
 		{
 			before ={
-				if((session.user=='retail') && (controllerName == 'user' || controllerName == 'address' || controllerName == 'productsDisplay' || controllerName =='cart'))
+				if((session?.user?.username =='retail') && (controllerName == 'user' || controllerName == 'address' || controllerName == 'productsDisplay' || controllerName =='cart'))
 			
 				{
 					render "You are Forbidden to Enter, Please contact Professor for more details"

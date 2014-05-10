@@ -21,6 +21,7 @@ class ProductsDisplayController {
     redirect (uri:"/")
 	}
 def showAll() {
+	println "in showall"
 	println "${params.categoryName}"
 	def cat = Category.findByCategoryName("${params.categoryName}")
 	//println cat

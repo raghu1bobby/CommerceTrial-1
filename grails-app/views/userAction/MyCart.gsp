@@ -18,17 +18,17 @@ border:1px solid black;
          
              <h4 class="title">Shopping cart</h4>
         <g:set var="total" value="${0l}" />     
-<g:form url="[controller:'user',action:'MyAccount']">
+<g:form url="[controller:'userAction',action:'MyAccount']">
     <table border="1">      
             <g:each in="${cart}" var="item">
                 
 
                
-    <tr><th><g:img dir="images/laptop" file="${item.Image}" width="270" height="200"/>
+    <tr><th><g:img dir="images" file="${item.image}" width="270" height="200"/>
                     
     <th><g:link class="title" controller="laptop" action="details" id="${item.id}" >${item.Title}</g:link>
-                <br>        $ ${item.Price}
-    <g:set var="total" value="${total+item.Price}" />
+                <br>        $ ${item.price}
+    <g:set var="total" value="${total+item.price}" />
                         <div class="clear"></div>       
      <g:link value="Remove" id="${item.id}" controller="userAction" action="removeFromCart">Remove</g:link>
         </th></tr>  
